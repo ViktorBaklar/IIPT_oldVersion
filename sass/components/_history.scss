@@ -1,0 +1,40 @@
+.history-item {
+  &:first-child p {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  &:last-child {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  &::first-letter {
+    padding-left: 25px;
+  }
+
+  .history-text {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  &.text-item:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.table-history-menu-list {
+  padding-bottom: 15px;
+  //overflow: hidden;
+}
+
+.tablet-history-menu-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

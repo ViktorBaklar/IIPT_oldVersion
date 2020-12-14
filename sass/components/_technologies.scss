@@ -1,0 +1,36 @@
+.technologies-list {
+  //padding: 0 25px;
+  @media screen and (max-width: 767px) {
+    padding: 0 25px;
+  }
+}
+
+.technologies-link {
+  color: $secondary-background-color;
+}
+
+.technologies-item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.technologies-link:hover,
+.technologies-link:focus {
+  color: $active-color;
+}
+
+.technologies p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $primary-text-color;
+}
+
+.technologies .text {
+  text-align: center;
+  padding: 15px 0;
+  @media screen and (min-wigth: 768px) {
+    padding: 10px 80px;
+  }
+}

@@ -1,0 +1,53 @@
+.side-bar {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-right: 5px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    width: 50px;
+    height: 629px;
+    //height: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 15px;
+    min-width: 25%;
+    max-width: 25%;
+  }
+  color: $white-text-color;
+  //animation: ease 1.7s slide-side-bar;
+  //transition: width 1250ms linear;
+
+  &-wrapper {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+    padding: 15px 15px 15px 5px;
+    background-image: linear-gradient(to left, #2196f3 85%, rgba(33, 150, 243, 0.4) 100%);
+    min-height: 100%;
+    border-radius: 25px;
+  }
+  &-item {
+    padding-left: 40px;
+  }
+
+  &-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $white-text-color;
+    text-transform: uppercase;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    color: $active-color;
+  }
+
+  &-link:active {
+    color: $secondary-text-color;
+  }
+}

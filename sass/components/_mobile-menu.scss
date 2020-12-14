@@ -1,0 +1,126 @@
+@keyframes mobile-menu-open {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.mobile-menu {
+  left: 50%;
+  transform: translateX(-50%);
+  //width: 480px;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+    position: absolute;
+    background-color: #ffffff;
+    //box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    //box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    border: 2px solid $secondary-background-color;
+    border-radius: 25px;
+
+    height: 80vh;
+    top: -100vh;
+    //right: 0%;
+    //left: -100%;
+    //display: none;
+    z-index: 500;
+    overflow-y: scroll;
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &.is-open {
+    //display: block;
+    //max-width: 480px;
+    width: 480px;
+    //top: 100%;
+
+    animation: mobile-menu-open 1000ms ease both;
+  }
+}
+
+.mobile-menu-list,
+.mobile-stuff-list {
+  padding-bottom: 15px;
+}
+
+.mobile-nav-menu {
+  text-align: center;
+  .link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+
+    &:active {
+      color: $secondary-text-color;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    text-transform: initial;
+    text-align: left;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+.mobile-menu-item,
+.mobile-stuff-item {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-menu-link,
+.mobile-stuff-link {
+  display: inline-block;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+/*
+.mobile-menu-link:not(:last-child),
+.mobile-stuff-link:not(:last-child) {
+  margin-bottom: 5px;
+}*/
+/*
+.history-menu-list {
+  padding-left: 10px;
+}/*
+/*
+.menu-underline {
+  position: relative;
+  padding-bottom: 12px;
+  color: $active-color;
+}
+
+.menu-underline::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: $active-color;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+}
+*/

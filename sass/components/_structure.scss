@@ -1,0 +1,24 @@
+.structure-wrapper {
+  padding-left: 25px;
+}
+
+.structure-wrapper .text-title {
+  padding-bottom: 15px;
+}
+
+.structure-item {
+  padding-bottom: 15px;
+}
+
+.structure-wrapper .text-subtitle {
+  padding-left: 25px;
+}
+
+.structure-link {
+  color: var(--secondary-background-color);
+}
+
+.structure-link:hover,
+.structure-link:focus {
+  color: var(--active-color);
+}

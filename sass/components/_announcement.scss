@@ -1,0 +1,41 @@
+.announcement {
+  .main-bar-top-box {
+    display: block;
+  }
+  .announcement-attention {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: italic;
+    color: $attention-color;
+    text-align: center;
+  }
+  .rent-action {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: italic;
+    color: $action-color;
+    text-align: center;
+    margin-top: 20px;
+  }
+  address {
+    font-style: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .vacancy-list {
+    padding: 10px 25px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .vacancy p {
+    font-size: 16px;
+  }
+}

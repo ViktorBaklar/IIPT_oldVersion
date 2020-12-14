@@ -1,0 +1,71 @@
+@media screen and (min-width: 1200px) {
+  .menu-list,
+  .stuff-list {
+    padding-left: 60px;
+    padding-bottom: 15px;
+  }
+
+  .menu {
+    .link {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $white-text-color;
+
+      &:hover,
+      &:focus {
+        color: $active-color;
+      }
+
+      &:active {
+        color: $secondary-text-color;
+      }
+    }
+
+    .title {
+      margin-bottom: 15px;
+      color: $white-text-color;
+    }
+
+    .subtitle {
+      color: $white-text-color;
+      text-transform: initial;
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+
+  .menu-link,
+  .stuff-link {
+    text-transform: uppercase;
+  }
+
+  .menu-link:not(:last-child),
+  .stuff-link:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .side-bar-item {
+    padding-left: 40px;
+  }
+
+  .side-bar-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $white-text-color;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+
+    &:active {
+      color: $secondary-text-color;
+    }
+  }
+
+  .history-menu-list {
+    padding-left: 10px;
+  }
+}

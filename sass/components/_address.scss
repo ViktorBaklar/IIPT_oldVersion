@@ -1,0 +1,27 @@
+.address {
+  /*background-color:  var(--secondary-background-color);*/
+  /*background-image: linear-gradient(to right, #2196f3, #ffffff);*/
+  min-width: 50%;
+  padding: 15px;
+  /*outline: 2px solid yellowgreen;*/
+  &-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &-link {
+    font-size: 12px;
+    font-weight: 400;
+    color: $white-text-color;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    color: $active-color;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    color: $white-text-color;
+  }
+}

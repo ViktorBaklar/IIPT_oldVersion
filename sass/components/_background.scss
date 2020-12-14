@@ -1,0 +1,16 @@
+.background {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+    height: 750px;
+    width: 1000px;
+  }
+}

@@ -1,0 +1,36 @@
+.research-work {
+  .main-bar-top-box {
+    display: block;
+  }
+  p {
+    text-align: center;
+  }
+  .research-list {
+    padding-top: 30px;
+    padding-left: 30px;
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &-link {
+      width: 100px;
+      background-color: $secondary-background-color;
+      padding: 5px 0;
+      border-radius: 4px;
+      text-align: center;
+      color: $white-text-color;
+      @media screen and (max-width: 767px) {
+        margin: 0 auto;
+      }
+    }
+    dl dd:last-child {
+      margin-top: 10px;
+    }
+    dl dt {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}

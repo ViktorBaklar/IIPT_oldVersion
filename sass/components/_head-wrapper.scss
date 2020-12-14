@@ -1,0 +1,96 @@
+header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  /*padding-bottom: 20px;*/
+  @media screen and (min-width: 395px) and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.head-wrapper {
+  @media screen and (min-width: 395px) and (max-width: 767px) {
+    background-color: #fff;
+    border-bottom: 10px solid #ffffff;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+  }
+
+  &-top {
+    @media screen and (max-width: 767px) {
+      padding-top: 12px;
+      justify-content: space-between;
+    }
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    align-items: center;
+    position: relative;
+
+    @media screen and (min-width: 480px) {
+      border-radius: 25px;
+    }
+
+    @media screen and (max-width: 767px) {
+      background-image: linear-gradient(to left, #2196f3 15%, #ffffff 50%, #ffffff 100%);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to left, #2196f3 15%, #ffffff 50%, #ffffff 100%);
+      border-radius: 0 25px 0 0;
+    }
+  }
+
+  &-top-left {
+    @media screen and (max-width: 767px) {
+      min-width: 80%;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 50%;
+    }
+  }
+
+  &-bottom {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    padding-left: 5px;
+    padding-right: 5px;
+    background-image: linear-gradient(to right, #2196f3 15%, #ffffff 50%, #ffffff 100%);
+    border-radius: 0 0 0 25px;
+  }
+
+  .title {
+    text-align: left;
+  }
+  .subtitle {
+    text-align: left;
+    margin-top: 9px;
+  }
+}
+
+.head-link-box {
+  text-align: center;
+  min-height: 100%;
+  /*@media screen and (max-width: 767px) {
+    min-width: 20%;
+  }*/
+  @media screen and (min-width: 768px) {
+    min-width: 50%;
+  }
+
+  .head-link {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    font-size: 16px;
+    font-weight: 400;
+    color: $white-text-color;
+  }
+
+  .head-link:hover,
+  .head-link:focus {
+    color: $active-color;
+  }
+}

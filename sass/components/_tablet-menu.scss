@@ -1,0 +1,117 @@
+@keyframes slide-menu {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 400px;
+  }
+}
+
+@keyframes slide-menu-back {
+  0% {
+    width: 400px;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+.tablet-menu {
+  padding: 40px 10px;
+  box-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  //position: sticky;
+  position: relative;
+  background-color: #ffffff;
+  //height: 100%;
+  height: 629px;
+  z-index: 550;
+  overflow: hidden;
+  display: flex;
+
+  animation: slide-menu-back 1000ms ease both;
+
+  //transform: translateX(0%);
+  //transition-property: all;
+  //transition-duration: 1250ms;
+  //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  &.is-open {
+    //position: absolute;
+
+    //width: 440px;
+    overflow-y: scroll;
+    animation: slide-menu 1000ms ease forwards;
+  }
+}
+
+.tablet-menu-list,
+.tablet-stuff-list {
+  padding-bottom: 15px;
+  //overflow: hidden;
+}
+
+.tablet-nav-menu {
+  //width: 0;
+  text-align: center;
+  //display: none;
+  position: absolute;
+  left: 50px;
+  width: 350px;
+
+  .link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+
+    &:active {
+      color: $secondary-text-color;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    text-transform: initial;
+    text-align: left;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .tablet-menu.is-open & {
+    display: block;
+    //width: 400px;
+    //background-color: transparent;
+    //overflow: hidden;
+    //animation: slide-menu 1000ms ease forwards;
+  }
+}
+
+.tablet-menu-item,
+.tablet-stuff-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tablet-menu-link,
+.tablet-stuff-link {
+  display: inline-block;
+  padding: 10px 0;
+  text-transform: uppercase;
+}

@@ -1,0 +1,103 @@
+.conferencies {
+  .main-bar-top-box {
+    display: block;
+  }
+  &-head {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .subtitle {
+    font-size: 19px;
+    color: $subtitle-color;
+    padding: 15px 0;
+  }
+  h4 {
+    font-size: 19px;
+    text-align: center;
+    //line-height: 1.4;
+    color: $action-color;
+    padding-bottom: 15px;
+  }
+  h5 {
+    font-size: 16px;
+    color: $action-color;
+  }
+  .text {
+    @media screen and (min-width: 767px) {
+      margin-left: 15px;
+    }
+    p {
+      font-size: 16px;
+      padding: 10px 0;
+      &::first-letter {
+        padding-left: 20px;
+      }
+    }
+  }
+  .conf-organizers-list {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+
+  .conference-materials {
+    //display: flex;
+    //flex-wrap: wrap;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+    }
+    .main-bar-image-conf {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+      /* @media screen and (min-width: 480px) {
+        width: 450px;
+      }*/
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+    }
+    /* @media screen and (min-width: 768px) {
+      display: flex;
+      //width: 100%;
+    } */
+  }
+
+  .conference-photos {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      /* .main-bar-image-conf {
+        width: 290px;
+      } */
+    }
+  }
+
+  .thumb {
+    width: 290px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc(100% - 20px) / 2;
+      &:nth-child(odd) {
+        margin-right: 20px;
+      }
+      &:nth-child(n-2) {
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

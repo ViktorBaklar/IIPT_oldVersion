@@ -1,0 +1,43 @@
+.table {
+  border: 1px solid;
+  width: 290px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 350px) {
+    width: 320px;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 420px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+  br {
+    @media screen and (min-width: 350px) {
+      display: none;
+    }
+  }
+  caption {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #2a5075;
+    @media screen and (min-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  th,
+  td {
+    border: 1px solid;
+    text-align: center;
+    br {
+      @media screen and (min-width: 350px) {
+        display: none;
+      }
+    }
+  }
+}
