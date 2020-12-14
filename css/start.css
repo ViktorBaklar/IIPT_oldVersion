@@ -15,7 +15,7 @@
   height: 100vh;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .start {
     background-image: url(../img/visit/Start.jpg);
     background-size: cover;
@@ -24,13 +24,13 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .start {
-    display: none;
+    background: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .start .title {
     font-weight: 700;
     font-size: 36px;
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .start .subtitle {
     font-weight: 700;
     font-size: 24px;
@@ -54,14 +54,14 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .start .language {
     display: flex;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .background {
     display: none;
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .ua {
     height: 80px;
     width: 80px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .en {
     height: 80px;
     width: 80px;
